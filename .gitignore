@@ -1,0 +1,29 @@
+# Runtime
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# SQLite DB + WAL (contains user/bet data)
+pm.db
+pm.db-shm
+pm.db-wal
+pm.db-journal
+
+# Logs
+server.log
+sync.log
+live-tick.log
+
+# State files
+.sync_state.json
+.claude/
+.harness/
+*.swp
+*.swo
+
+# Backups (kept in the tree for safety but NOT versioned)
+*.bak.*
+server.py.bak.*
+app.js.bak.*
+pm.db.bak.*
